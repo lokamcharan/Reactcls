@@ -56,6 +56,8 @@ function App(){
         <h2>Button</h2>
       <ButtonComponents/>
 
+
+
       <h2>Table</h2>
       <Table/>
 
