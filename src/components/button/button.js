@@ -1,9 +1,15 @@
 
-
+// import "./style.css" 
 
 function ButtonComponents(){
     return(
-        <button>submit</button>
+        <div>
+
+       
+        <button className={"sub"}>submit</button>
+        <br></br>
+        <hr></hr>
+        </div>
     )
 }
 export default ButtonComponents

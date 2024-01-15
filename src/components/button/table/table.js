@@ -2,7 +2,8 @@
 
 function Table(){
     return(
-        <table>
+      <>
+        <table >
         <tr>
           <th>sl.no</th>
           <th>name</th>
@@ -24,6 +25,10 @@ function Table(){
           <td>64984616984654984</td>
         </tr>
       </table>
+      <br></br>
+      <hr>
+      </hr>
+      </>
     )
 }
 export default Table

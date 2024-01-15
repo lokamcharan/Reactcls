@@ -1,0 +1,57 @@
+
+
+
+.greeting{
+
+    color: blue;
+}
+
+.main{
+    background-color: blue;
+}
+.sub{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+table,th,tr,td{
+
+    border: 1px solid ;
+    border-collapse: collapse;
+    background-color: lightsteelblue;
+   
+}
+
+.login{
+    background-color: blue;
+    color: aliceblue;
+}
+
+#ol{
+color:lightgreen;
+}
+
+#ul{
+    color: cadetblue;
+}
+
+#item{
+    color:lightsalmon;
+}
+
+.subscribe,button{
+    background-color:red;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+.click{
+    background-color:blue;
+    color: black;
+}
+.imgage1{
+    background-color:black;
+    color: whitesmoke;
+}

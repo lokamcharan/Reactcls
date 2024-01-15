@@ -1,4 +1,7 @@
+
 // import React from 'react';
+
+
 // function App(){
 //   return (
 //    <div>
@@ -6,8 +9,7 @@
 //     <ol>
 //       <li>telugu</li>
 //       <li>maths</li>
-//       <li>social</li>
-
+//       <li>social</li
 //     </ol>
 //     <h2>Table</h2>
     // <table>
@@ -49,35 +51,30 @@ import FormsComponents from "./components/button/forms/froms"
 import ListComponents from "./components/button/list/ollist/ollist"
 import List1Components from "./components/button/list/ollist/ullist/ullist"
 import ListitemComponents from "./components/button/list/ollist/listitem/listitem"
+import ImageChange from "./components/image/image"
+import { TodoList } from "./components/button/todolist/todolist"
+import Button1Component from "./components/button1/button-componets"
+import ApiCall from "./components/ehandling/ehandling"
+import InlineStyles from "./components/styles/incline-style"
+import ExternalStyles from "./components/styles/external-style"
+ 
 
 function App(){
-    return (
-      <div>
-        <h2>Button</h2>
-      <ButtonComponents/>
-
-
-
-      <h2>Table</h2>
-      <Table/>
-
-      <h2>Forms</h2>
-      <FormsComponents/>
-
-
-
-
-      <h2>order list</h2>
-      <ListComponents/>
-
-      <h2>unorder list</h2>
-      <List1Components/>
-
-      <ListitemComponents/>
-
-      
-      </div>
-    )
-
+  return(
+    <div style={{backgroundColor:"GrayText"}}>
+         <ButtonComponents/>
+         <Table/>
+         <FormsComponents/>
+         <ListComponents/>
+         <List1Components/>
+         <ListitemComponents/>
+         <TodoList/>
+         <Button1Component/>
+         <ImageChange/>
+         <ApiCall/>
+         <InlineStyles/>
+         <ExternalStyles/>
+    </div>
+  )
 }
 export default App
