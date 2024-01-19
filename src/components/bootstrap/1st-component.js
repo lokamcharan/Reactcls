@@ -1,27 +1,39 @@
- 
+ import ProfileCard from "./card"
+
 
   const BootstrapLayout=()=>{
+
+    const members=[{
+
+    
+      name:"kanna" ,
+      color:"red" ,
+      designation:"CEO"
+    },{
+      name:"krshi", color:"yellow" ,designation:"HR"
+    },{
+     name:"harsha" ,color:"blue", designation:"TL"
+
+    }
+  ]
     return(
 
         <>
-        <div class="jumbotron text-center">
+        <div className="jumbotron text-center">
   <h1>My First Bootstrap Page</h1>
   <p>Resize this responsive page to see the effect!</p>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
+<div className="container">
+  <div className="row">
+    <div className="col-sm-4">
+      <ProfileCard profile={members[0]}/>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
+    <div className="col-sm-4">
+      <ProfileCard  profile={members[1]}/>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor..</p>
+    <div className="col-sm-4">
+    <ProfileCard profile={members[2]}/>
     </div>
   </div>
 </div>
@@ -29,4 +41,4 @@
     )
   }
 
-  exports  default Boo
+  export  default BootstrapLayout

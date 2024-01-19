@@ -57,12 +57,16 @@ import Button1Component from "./components/button1/button-componets"
 import ApiCall from "./components/ehandling/ehandling"
 import InlineStyles from "./components/styles/incline-style"
 import ExternalStyles from "./components/styles/external-style"
+import BootstrapLayout from "./components/bootstrap/1st-component"
+import MapMethod from "./components/bootstrap/mapmethod"
+import ParentComponent from "./components/props/parent"
+import Counter from "./components/counter/counter"
  
 
 function App(){
   return(
     <div style={{backgroundColor:"GrayText"}}>
-         <ButtonComponents/>
+         {/* <ButtonComponents/>
          <Table/>
          <FormsComponents/>
          <ListComponents/>
@@ -73,7 +77,11 @@ function App(){
          <ImageChange/>
          <ApiCall/>
          <InlineStyles/>
-         <ExternalStyles/>
+         <ExternalStyles/> */}
+         {/* <BootstrapLayout/> */}
+         {/* <MapMethod/> */}
+         {/* <ParentComponent/> */}
+         <Counter/>
     </div>
   )
 }
