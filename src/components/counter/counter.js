@@ -20,6 +20,7 @@ handleIncrement=()=>{
         count:this.state.count+1
     })
 }
+
     render(){
         return(
             <>
@@ -31,4 +32,4 @@ handleIncrement=()=>{
     }
 }
 
-export default Counter
+export default Counter 

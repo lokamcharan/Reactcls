@@ -45,27 +45,31 @@
 // }
 // export default App;
 
-import ButtonComponents from "./components/button/button"
-import Table from "./components/button/table/table"
-import FormsComponents from "./components/button/forms/froms"
-import ListComponents from "./components/button/list/ollist/ollist"
-import List1Components from "./components/button/list/ollist/ullist/ullist"
-import ListitemComponents from "./components/button/list/ollist/listitem/listitem"
-import ImageChange from "./components/image/image"
-import { TodoList } from "./components/button/todolist/todolist"
-import Button1Component from "./components/button1/button-componets"
-import ApiCall from "./components/ehandling/ehandling"
-import InlineStyles from "./components/styles/incline-style"
-import ExternalStyles from "./components/styles/external-style"
-import BootstrapLayout from "./components/bootstrap/1st-component"
-import MapMethod from "./components/bootstrap/mapmethod"
-import ParentComponent from "./components/props/parent"
-import Counter from "./components/counter/counter"
+// import ButtonComponents from "./components/button/button"
+// import Table from "./components/button/table/table"
+// import FormsComponents from "./components/button/forms/froms"
+// import ListComponents from "./components/button/list/ollist/ollist"
+// import List1Components from "./components/button/list/ollist/ullist/ullist"
+// import ListitemComponents from "./components/button/list/ollist/listitem/listitem"
+// import ImageChange from "./components/image/image"
+// import { TodoList } from "./components/button/todolist/todolist"
+// import Button1Component from "./components/button1/button-componets"
+// import ApiCall from "./components/ehandling/ehandling"
+// import InlineStyles from "./components/styles/incline-style"
+// import ExternalStyles from "./components/styles/external-style"
+// import BootstrapLayout from "./components/bootstrap/1st-component"
+// import MapMethod from "./components/bootstrap/mapmethod"
+// import ParentComponent from "./components/props/parent"
+// import Counter from "./components/counter/counter"
+import Mounting from "./components/life-cycle/mounting/mounting-phase"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Cards from "./components/bootstrap/boost1"
  
 
 function App(){
   return(
-    <div style={{backgroundColor:"GrayText"}}>
+    <div>
+     {/* style={{backgroundColor:"GrayText"}} */}
          {/* <ButtonComponents/>
          <Table/>
          <FormsComponents/>
@@ -81,7 +85,11 @@ function App(){
          {/* <BootstrapLayout/> */}
          {/* <MapMethod/> */}
          {/* <ParentComponent/> */}
-         <Counter/>
+         {/* <Counter/> */}
+         <Mounting/>
+
+         {/* <Cards/> */}
+
     </div>
   )
 }
