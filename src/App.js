@@ -64,6 +64,11 @@
 import Mounting from "./components/life-cycle/mounting/mounting-phase"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Cards from "./components/bootstrap/boost1"
+import UseStateExample1 from "./components/hooks/usestate/usestate-example"
+import UseStateExample2 from "./components/hooks/usestate/usestate-example2"
+import UseStateExample3 from "./components/hooks/usestate/usestate-example3"
+import Uncontrolled from "./components/forms/uncontrolled"
+import ButtonCircles from "./components/cricle/cricle"
  
 
 function App(){
@@ -86,10 +91,14 @@ function App(){
          {/* <MapMethod/> */}
          {/* <ParentComponent/> */}
          {/* <Counter/> */}
-         <Mounting/>
+         {/* <Mounting/> */}
 
          {/* <Cards/> */}
-
+         {/* <UseStateExample1/>
+         <UseStateExample2/> */}
+        {/* <UseStateExample3/> */}
+        {/* <Uncontrolled/> */}
+        <ButtonCircles/>
     </div>
   )
 }
