@@ -1,47 +1,47 @@
-import { getValue } from "@testing-library/user-event/dist/utils"
-import React,   { useState } from "react"
 
+import React, { useState } from "react"
 
-
-
-const UseStateExample2 =()=>{
-
-    const[current,setCurrent]=useState([{
+export const UseSateExample2=()=>{
+    const [current,setCurrent]=useState([{
         id:1,
-        name:"sushanth",
+        name:"Krishil",
         salary:10000
-    },
-    {
-        id:2,   
-        name:"mani",
+    },{
+        id:2,
+        name:"Sony",
         salary:20000
-    }
-    
-])
-const [salary,setSalary]=useState(current[0].salary);
+    }])
+   
+    const incrementSalary = (data) => {
+        setCurrent((prevCurrent) => {
+          return prevCurrent.map((item) =>
+            item.id === data.id ? { ...item, salary: item.salary + 1000 } : item
+          );
+        });
+      };
+      const decrementSalary=(data)=>{
+        setCurrent((prevCurrent) => {
+            return prevCurrent.map((item) =>
+              item.id === data.id ? { ...item, salary: item.salary - 1000 } : item
+            );
+          });
 
-const incrementSalary=()=>{
-    setSalary(salary+100)
-
-}
-const decrementSalary=()=>{
-
-    setSalary(salary-100)
-}
-
+      }
 
     return(
         <>
-        {
-current.map((value)=>(<React.Fragment key={value.id}>
-<h1>{value.name}</h1>
-<h1>{value.salary}</h1>
-<button onClick={incrementSalary}>Increment salary</button>
-<button onClick={decrementSalary}>Decrement salary</button>
-</React.Fragment>)
-        )}
-
+            {
+                current.map((value)=><React.Fragment key={value.id}>
+                <>
+                <h2>{value.name}</h2>
+                <h2>{value.salary}</h2>
+                <button onClick={()=>incrementSalary(value)}>click to increment salary</button>
+                <button onClick={()=>decrementSalary(value)}>click to decrement salary</button>
+                </>
+                </React.Fragment>)
+            }
+           
         </>
     )
 }
-export default UseStateExample2 
+export default UseSateExample2

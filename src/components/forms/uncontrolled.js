@@ -1,10 +1,11 @@
-import { useRef } from "react"
+import { useRef ,use, useState} from "react"
 
 
 
 const Uncontrolled=()=>{
 const emailRef=useRef()
 const passwordRef=useRef()
+ const[error,setError]=useState("")
 
     const handleSubmit=(event)=>   {
 
@@ -33,7 +34,16 @@ const passwordRef=useRef()
   body: JSON.stringify(data)
 })
 .then(res => res.json())
-.then(res=>console.log(res))
+.then(res=>{
+if(res.message){
+  alert(res.message)
+  setError(res.message) 
+}else{
+  alert("succesfully login")
+  setError("")
+}
+
+})
 .catch(err=>console.log(err));
             
     }
@@ -48,6 +58,12 @@ const passwordRef=useRef()
     <label >Password:</label>
     <input type="password" className="form-control" id="pwd" ref={passwordRef}/>
   </div>
+  {
+    error ? 
+    <h1 style={{color:"red"}}>{error}</h1>
+    :
+    null
+  }
   <button type="submit" className="btn btn-default">Submit</button>
 </form>
 

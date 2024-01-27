@@ -69,7 +69,8 @@ import UseStateExample2 from "./components/hooks/usestate/usestate-example2"
 import UseStateExample3 from "./components/hooks/usestate/usestate-example3"
 import Uncontrolled from "./components/forms/uncontrolled"
 import ButtonCircles from "./components/cricle/cricle"
- 
+import Controlled from "./components/forms/controlled"
+import RegistrationForm from "./components/forms/register"
 
 function App(){
   return(
@@ -94,11 +95,14 @@ function App(){
          {/* <Mounting/> */}
 
          {/* <Cards/> */}
-         {/* <UseStateExample1/>
-         <UseStateExample2/> */}
+          {/* <UseStateExample1/> */}
+        {/* <UseStateExample2/> */}
         {/* <UseStateExample3/> */}
         {/* <Uncontrolled/> */}
         <ButtonCircles/>
+ {/* =========24/1/24=========== */}
+        {/* <Controlled/> */}
+         {/* <RegistrationForm/>  */}
     </div>
   )
 }
