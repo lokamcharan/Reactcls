@@ -1,44 +1,52 @@
- import ProfileCard from "./card"
+import ProfileCard from "./card";
 
+const BootstrapLayout = () => {
+  const members = [
+    {
+      name: "kanna",
+      color: "red",
+      description: "CEO",
+    },
+    {
+      name: "krshi",
+      color: "yellow",
+      description: "HR",
+    },
+    {
+      name: "harsha",
+      color: "blue",
+      description: "TL",
+    },
+  ];
 
-  const BootstrapLayout=()=>{
+  return (
+    <>
+      {/* <div className="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+      </div>
 
-    const members=[{
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-4">
+            <ProfileCard {...members[0]} />
+          </div>
+          <div className="col-sm-4">
+            <ProfileCard {...members[1]} />
+          </div>
+          <div className="col-sm-4">
+            <ProfileCard {...members[2]} />
+          </div>
+        </div>
+      </div> */}
 
-    
-      name:"kanna" ,
-      color:"red" ,
-      designation:"CEO"
-    },{
-      name:"krshi", color:"yellow" ,designation:"HR"
-    },{
-     name:"harsha" ,color:"blue", designation:"TL"
+      <div style={{display:"flex", justifyContent:"space-around"}}>
+        <ProfileCard {...members[0]} />
+        <ProfileCard {...members[1]} />
+        <ProfileCard {...members[2]} />
+      </div>
+    </>
+  );
+};
 
-    }
-  ]
-    return(
-
-        <>
-        <div className="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
-</div>
-
-<div className="container">
-  <div className="row">
-    <div className="col-sm-4">
-      <ProfileCard profile={members[0]}/>
-    </div>
-    <div className="col-sm-4">
-      <ProfileCard  profile={members[1]}/>
-    </div>
-    <div className="col-sm-4">
-    <ProfileCard profile={members[2]}/>
-    </div>
-  </div>
-</div>
-        </>
-    )
-  }
-
-  export  default BootstrapLayout
+export default BootstrapLayout;

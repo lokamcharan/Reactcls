@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { DataShare } from "../../navigation/navigation";
 
 const RegistrationForm=()=>{
 
@@ -7,6 +8,9 @@ const RegistrationForm=()=>{
     const[Email,setEmail]=useState("")
     const[Gender, setGender] = useState("")
     const [ConfirmPassword, setConfirmPassword] = useState("");
+
+
+    // const {loginTrue}=useContext(DataShare)
 
     const[UserNameError,setUserNameError]=useState("")
     const[PasswordError,setPasswordError]=useState("")

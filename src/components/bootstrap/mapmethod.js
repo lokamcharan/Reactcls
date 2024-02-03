@@ -17,8 +17,8 @@ const MapMethod=()=>{
     return(
         <>
         <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>WelCome </h1>
+  <p>10k coders</p> 
 </div>
   
 <div class="container">
